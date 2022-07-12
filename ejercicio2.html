@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Ordenar un arreglo</h1>  
+<script>
+arr=  [3,9,1,10,500,1,10];
+let elementos= 7;
+let aux ;
+
+for(i=0 ; i <elementos-1;  i++){
+
+    for(j=0 ; j <elementos-1 ; j++){
+
+       if ( arr[j] <arr[j+1] ){
+
+              aux= arr[j];
+              arr[j] = arr[j+1] ;
+              arr[j+1] = aux;
+           
+       }
+     
+    } 
+}
+
+console.log(arr);
+
+</script>
+
+</body>
+</html>
